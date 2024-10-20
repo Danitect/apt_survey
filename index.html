@@ -38,7 +38,7 @@
     const participantCount = document.getElementById('participantCount'); // 참가 인원 표시 요소
 
     document.addEventListener('DOMContentLoaded', function() {
-      fetch('https://script.google.com/macros/s/AKfycbx7W8brZz0nXNJf1lONpC0GfgZojzbSi6ZYe12sViPAQPD7E38SWaJjtW7CZ8MZNfvN/exec')
+      fetch('https://script.google.com/macros/s/AKfycbyZCWBIKy7HV1CogY6kU3rv3kn3iaiWeSplazRbHFeNtUDkTiBD1ovhYjiS_3PiGDYV/exec')
         .then(response => response.json())
         .then(data => {
           if (data.totalParticipants) {
@@ -79,7 +79,7 @@
       const signatureData = signaturePad.toDataURL('image/png');
       formData.append('signature', signatureData);
 
-      fetch('https://script.google.com/macros/s/AKfycbx7W8brZz0nXNJf1lONpC0GfgZojzbSi6ZYe12sViPAQPD7E38SWaJjtW7CZ8MZNfvN/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbyZCWBIKy7HV1CogY6kU3rv3kn3iaiWeSplazRbHFeNtUDkTiBD1ovhYjiS_3PiGDYV/exec', {
         method: 'POST',
         body: formData
       })

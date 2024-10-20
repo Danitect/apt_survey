@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container mt-5">
-    <h4 class="mb-4">📝동탄3동 주민센타 1층로비 후문개방을 위한 주민서명</h4>
+    <h4 class="mb-4">📝동탄3동 </h4>
     <h5>🤷‍♂️아래에 주소(동,호수) 및 성명을 입력후 서명해 주세요</h5>
     <form id="consentForm" method="post">
       <div class="form-group">
@@ -38,7 +38,7 @@
     const participantCount = document.getElementById('participantCount'); // 참가 인원 표시 요소
 
     document.addEventListener('DOMContentLoaded', function() {
-      fetch('https://script.google.com/macros/s/AKfycbyZCWBIKy7HV1CogY6kU3rv3kn3iaiWeSplazRbHFeNtUDkTiBD1ovhYjiS_3PiGDYV/exec')
+      fetch('https://script.google.com/macros/s/AKfycbzzHNxJxxeqmQftLYSvEyIYTREWjPaWv7rseIrxhmyZ_DPlgLGNxfvLx6J2sltUUDz1/exec')
         .then(response => response.json())
         .then(data => {
           if (data.totalParticipants) {
@@ -79,7 +79,7 @@
       const signatureData = signaturePad.toDataURL('image/png');
       formData.append('signature', signatureData);
 
-      fetch('https://script.google.com/macros/s/AKfycbyZCWBIKy7HV1CogY6kU3rv3kn3iaiWeSplazRbHFeNtUDkTiBD1ovhYjiS_3PiGDYV/exec', {
+      fetch('https://script.google.com/macros/s/AKfycbzzHNxJxxeqmQftLYSvEyIYTREWjPaWv7rseIrxhmyZ_DPlgLGNxfvLx6J2sltUUDz1/exec', {
         method: 'POST',
         body: formData
       })
